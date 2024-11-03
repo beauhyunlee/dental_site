@@ -1,0 +1,201 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+header {
+    background-color: #3e64ff;
+    color: #fff;
+    padding: 1em 2em;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-links a:hover {
+    color: #d3d3d3;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #f4f4f9;
+    text-align: center;
+    padding: 2em 1em;
+}
+#hero h2 {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+#hero p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+/* Main Content */
+main {
+    padding: 2em 1em;
+}
+#featured {
+    margin-bottom: 2em;
+}
+#featured h2 {
+    color: #333;
+    margin-bottom: 1em;
+}
+.article {
+    background-color: #e9effd;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.article h3 {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+.article p {
+    color: #666;
+}
+.article a {
+    color: #3e64ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.article a:hover {
+    text-decoration: underline;
+}
+
+/* Newsletter Section */
+#newsletter {
+    text-align: center;
+    background-color: #f4f4f9;
+    padding: 2em;
+}
+#newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+#newsletter input[type="email"] {
+    padding: 0.5em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+#newsletter button {
+    padding: 0.5em 1em;
+    background-color: #3e64ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#newsletter button:hover {
+    background-color: #2b4cb6;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+.footer-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    color: #d3d3d3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+    #newsletter form {
+        flex-direction: column;
+    }
+}
+/* New Article Grid Section */
+#latest-articles {
+    margin-top: 2em;
+    padding: 2em 1em;
+}
+
+#latest-articles h2 {
+    color: #333;
+    margin-bottom: 1em;
+}
+
+/* Article Grid Styling */
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.article-card {
+    background-color: #e9effd;
+    border-radius: 8px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px; /* Keeps the cards roughly square */
+    text-align: left;
+}
+
+.article-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.article-card p {
+    color: #666;
+    flex-grow: 1;
+    font-size: 0.9em;
+}
+
+.article-card a {
+    color: #3e64ff;
+    text-decoration: none;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.article-card a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+    #newsletter form {
+        flex-direction: column;
+    }
+}
